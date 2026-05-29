@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <title>敲了么</title>
+  <link rel="icon" href="assets/app-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/app-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/app-icon.png" alt="" width="40" height="40">
+        <span class="brand-name">敲了么</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main">
+        <a class="nav-link" data-page="home" href="index.html" data-i18n="nav_home"></a>
+        <a class="nav-link" data-page="privacy" href="privacy.html" data-i18n="nav_privacy"></a>
+        <a class="nav-link" data-page="terms" href="terms.html" data-i18n="nav_terms"></a>
+      </nav>
+
+      <div class="header-actions">
+        <div id="lang-switcher"></div>
+        <a class="btn btn-primary app-store-link" href="#" data-i18n="hero_cta"></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <div class="eyebrow" data-i18n="app_name"></div>
+          <h1 data-i18n="hero_title"></h1>
+          <p class="hero-lead" data-i18n="hero_description"></p>
+          <div class="hero-actions">
+            <a class="btn btn-primary app-store-link" href="#" data-i18n="hero_cta"></a>
+            <a class="btn btn-ghost" href="#features" data-i18n="section_features"></a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-glow" aria-hidden="true"></div>
+          <div class="hero-carousel" aria-roledescription="carousel">
+            <div class="hero-carousel-track">
+              <div class="hero-carousel-slide">
+                <img src="assets/screenshot-1-en-home.png" alt="" class="hero-shot">
+                <img src="assets/screenshot-2-zh-home.png" alt="" class="hero-shot">
+              </div>
+              <div class="hero-carousel-slide">
+                <img src="assets/screenshot-3-stats.png" alt="" class="hero-shot">
+                <img src="assets/screenshot-4-vessels.png" alt="" class="hero-shot">
+              </div>
+            </div>
+            <div class="hero-carousel-dots" aria-hidden="true">
+              <span class="is-active"></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="section_features"></h2>
+          <p data-i18n="hero_subtitle"></p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon">✦</div>
+            <h3 data-i18n="feature_merit_title"></h3>
+            <p data-i18n="feature_merit_subtitle"></p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">☯</div>
+            <h3 data-i18n="feature_calm_title"></h3>
+            <p data-i18n="feature_calm_subtitle"></p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">📊</div>
+            <h3 data-i18n="feature_stats_title"></h3>
+            <p data-i18n="feature_stats_subtitle"></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="vessels">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="section_vessels"></h2>
+          <p data-i18n="pro_benefit_vessels_subtitle"></p>
+        </div>
+        <div class="vessel-grid">
+          <div class="vessel-item">
+            <img src="assets/wooden-fish.png" alt="">
+            <span data-i18n="vessel_wooden"></span>
+          </div>
+          <div class="vessel-item">
+            <img src="assets/copper-gong.png" alt="">
+            <span data-i18n="vessel_copper"></span>
+          </div>
+          <div class="vessel-item">
+            <img src="assets/bronze-fish.png" alt="">
+            <span data-i18n="vessel_bronze"></span>
+          </div>
+          <div class="vessel-item">
+            <img src="assets/gold-fish.png" alt="">
+            <span data-i18n="vessel_gold"></span>
+          </div>
+          <div class="vessel-item">
+            <img src="assets/singing-bowl.png" alt="">
+            <span data-i18n="vessel_bowl"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pro-section" id="pro">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="section_pro"></h2>
+          <p data-i18n="pro_hero_subtitle"></p>
+        </div>
+        <div class="pro-wrap">
+          <article class="pro-card highlight">
+            <div class="feature-icon">👑</div>
+            <h3 data-i18n="pro_hero_title"></h3>
+            <p data-i18n="pro_benefit_vessels_subtitle"></p>
+          </article>
+          <article class="pro-card">
+            <div class="feature-icon">⚡</div>
+            <h3 data-i18n="pro_benefit_auto_title"></h3>
+            <p data-i18n="pro_benefit_auto_subtitle"></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="more">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="section_more"></h2>
+        </div>
+        <div class="more-grid">
+          <article class="more-card">
+            <div class="feature-icon">📱</div>
+            <h3 data-i18n="feature_widget_title"></h3>
+            <p data-i18n="feature_widget_subtitle"></p>
+          </article>
+          <article class="more-card">
+            <div class="feature-icon">🔔</div>
+            <h3 data-i18n="feature_reminder_title"></h3>
+            <p data-i18n="feature_reminder_subtitle"></p>
+          </article>
+          <article class="more-card">
+            <div class="feature-icon">☁️</div>
+            <h3 data-i18n="feature_icloud_title"></h3>
+            <p data-i18n="feature_icloud_subtitle"></p>
+          </article>
+          <article class="more-card">
+            <div class="feature-icon">🏅</div>
+            <h3 data-i18n="feature_achievement_title"></h3>
+            <p data-i18n="feature_achievement_subtitle"></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="cta-band">
+        <h2 data-i18n="app_slogan"></h2>
+        <p data-i18n="hero_description"></p>
+        <a class="btn btn-primary app-store-link" href="#" data-i18n="hero_cta"></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p data-i18n="footer_copyright"></p>
+      <div class="footer-links">
+        <a href="privacy.html" data-i18n="nav_privacy"></a>
+        <a href="terms.html" data-i18n="nav_terms"></a>
+        <a class="contact-link" href="#" data-i18n="footer_contact"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/locales.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
