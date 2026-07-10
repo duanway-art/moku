@@ -2,7 +2,7 @@
   "use strict";
 
   const STORAGE_KEY = "qiaomuyu-lang";
-  const APP_STORE_URL = "https://apps.apple.com/app/id0000000000"; // TODO: replace with real App Store ID
+  const APP_STORE_URL = "https://apps.apple.com/us/app/moku-zen-tap-relax/id6774033552";
   const CONTACT_EMAIL = "duanwei@nonoor.com";
 
   const LANG_MAP = {
@@ -229,13 +229,38 @@
       }
     }
 
+    function resetTimer() {
+      clearInterval(timer);
+      timer = setInterval(advance, intervalMs);
+    }
+
+    dots.forEach((dot, i) => {
+      dot.setAttribute("role", "button");
+      dot.setAttribute("tabindex", "0");
+      dot.setAttribute("aria-label", `Slide ${i + 1}`);
+
+      function selectSlide() {
+        if (index % slideCount === i) {
+          if (index === slideCount) goTo(i, false);
+          return;
+        }
+        goTo(i, index < slideCount);
+        resetTimer();
+      }
+
+      dot.addEventListener("click", selectSlide);
+      dot.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          selectSlide();
+        }
+      });
+    });
+
     let timer = setInterval(advance, intervalMs);
 
     carousel.addEventListener("mouseenter", () => clearInterval(timer));
-    carousel.addEventListener("mouseleave", () => {
-      clearInterval(timer);
-      timer = setInterval(advance, intervalMs);
-    });
+    carousel.addEventListener("mouseleave", resetTimer);
   }
 
   document.addEventListener("DOMContentLoaded", () => {

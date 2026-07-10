@@ -415,10 +415,6 @@ a {
   margin: 0 auto;
 }
 
-.watch-section {
-  padding-top: 0;
-}
-
 .watch-showcase {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -456,6 +452,16 @@ a {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.22);
   transition: background 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.hero-carousel-dots span:hover {
+  background: rgba(235, 201, 146, 0.45);
+}
+
+.hero-carousel-dots span:focus-visible {
+  outline: 2px solid var(--accent-strong);
+  outline-offset: 3px;
 }
 
 .hero-carousel-dots span.is-active {
