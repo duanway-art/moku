@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <title>用户协议 · 敲了么</title>
+  <link rel="icon" href="assets/app-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/app-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="terms">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/app-icon.png" alt="" width="40" height="40">
+        <span class="brand-name">敲了么</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main">
+        <a class="nav-link" data-page="home" href="index.html" data-i18n="nav_home"></a>
+        <a class="nav-link" data-page="privacy" href="privacy.html" data-i18n="nav_privacy"></a>
+        <a class="nav-link" data-page="terms" href="terms.html" data-i18n="nav_terms"></a>
+      </nav>
+
+      <div class="header-actions">
+        <div id="lang-switcher"></div>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="legal-page">
+    <div class="container legal-card">
+      <h1 data-i18n="legal_terms_title"></h1>
+      <div id="legal-body"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p data-i18n="footer_copyright"></p>
+      <div class="footer-links">
+        <a href="privacy.html" data-i18n="nav_privacy"></a>
+        <a href="terms.html" data-i18n="nav_terms"></a>
+        <a class="contact-link" href="#" data-i18n="footer_contact"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/locales.js"></script>
+  <script src="js/legal-content.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
